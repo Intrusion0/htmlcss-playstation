@@ -1,7 +1,71 @@
 /* General rules */
+@import url('http://fonts.cdnfonts.com/css/arial');
+@import url('http://fonts.cdnfonts.com/css/helvetica-255');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+}
+
+header .row:first-child {
+    background-color: black;
+}
+
+header .row:first-child h2 {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    margin-bottom: 0;
+    padding: 5px 10px;
+}
+
+.ms_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ms_container img {
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+}
+
+.ms_navbar {
+    font-family: 'Helvetica', sans-serif;
+    background-color: white !important;
+}
+
+/* Icon search */
+.bi.bi-search {
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.ms_search {
+    display: none;
+}
+
+.ms_nav-link {
+    color: black !important;
+    font-weight: 600;
+}
+
+.dropdown-toggle::after {
+    color: #999999;
+    vertical-align: 0.13em;
+}
+
+.ms_btn {
+    margin: 0 10px;
 }

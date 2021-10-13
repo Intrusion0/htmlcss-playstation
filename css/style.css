@@ -36,7 +36,6 @@ header .row:first-child h2 {
 }
 
 .ms_container img {
-    width: 100px;
     height: 35px;
     padding: 10px;
 }
@@ -66,6 +65,53 @@ header .row:first-child h2 {
     vertical-align: 0.13em;
 }
 
-.ms_btn {
+.ms_btn-header {
     margin: 0 10px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    position: relative;
+    min-height: 960px;
+    margin-top: 111px;
+    background-image: url('../img/jumbo-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ms_container_jumbo {
+    position: absolute;
+    bottom: 150px;
+    left: 30px;
+}
+
+.ms_btn-jumbotron {
+    color: #fff;
+    background-color: #cd3d0f;
+    border-color: #cd3d0f;
+}
+
+.jumbotron h2 {
+    font-size: 65px;
+    color: white;
+    padding: 45px 0 10px 0;
+}
+
+.jumbotron p {
+    padding: 35px 0 20px;
+    font-size: 26px;
+    color: white;
+}
+
+.jumbotron img {
+    height: 65px;
+}
+
+/* Mediaquery */
+
+@media all and (min-width: 992px) {
+    .jumbotron img {
+        height: 60px;
+    }
 }

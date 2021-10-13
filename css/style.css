@@ -142,12 +142,16 @@ header .ms_container img {
 }
 
 #console .h2 {
-    font-size: 70px;
+    font-size: 62px;
 }
 
 #console small {
     padding: 20px 0;
-    font-size: 35px;
+    font-size: 30px;
+}
+
+#ps_5 {
+    width: 100%;
 }
 
 .ms_container-console {
@@ -162,18 +166,93 @@ header .ms_container img {
 
 .ms_text-console {
     align-items: center;
+    margin: 100px 0;
+}
+
+#console .ms_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.card_img {
+    width: 55%;
+}
+
+.mini_card {
+    display: block;
+    margin-top: 15px;
+}
+
+.mini_card p {
+    font-size: 17px;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #0072ce!important;
+    padding-bottom: 26px;
 }
 
 /* Mediaquery */
 
+/* Da Large in su (lg - xxl) */
+
 @media all and (min-width: 992px) {
+    /* Jumbotron */
     .jumbotron img {
         height: 60px;
     }
 }
 
+/* Tablet (md) */
+
+@media all and (max-width: 992px) {
+    /* Header */
+    .ms_search {
+        display: block;
+    }
+
+    /* Console */
+    .border-bottom {
+        padding-bottom: 54px;
+    }
+
+    .mini_card p {
+        font-size: 20px;
+    }
+}
+
+/* Smartphone (sm) */
+
 @media all and (max-width: 768px) {
+    /* Sezione giochi */
     #giochi img {
         width: 100%;
+    }
+
+    /* Sezione console */
+    #console small {
+        font-size: 28px;
+    }
+
+    #console .h2 {
+        font-size: 45px;
+    }
+
+    .mini_card {
+        display: none;
+    }
+}
+
+/* Smartphone (xs) */
+
+@media all and (max-width: 576px) {
+    /* Console */
+    #console .h2 {
+        font-size: 40px;
+    }
+
+    #console small {
+        font-size: 20px;
     }
 }

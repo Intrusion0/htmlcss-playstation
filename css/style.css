@@ -82,8 +82,9 @@ header .ms_container img {
 
 .ms_container_jumbo {
     position: absolute;
-    bottom: 150px;
-    left: 30px;
+    bottom: 105px;
+    left: 0;
+    padding-left: 45px;
 }
 
 .ms_btn-jumbotron {
@@ -128,6 +129,23 @@ header .ms_container img {
 #img_border {
     padding: 4px;
     border: solid 2px #0072ce;
+}
+
+/* Sezione console */
+#console {
+    /* debug */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 500px;
+    width: 100%;
+}
+
+#console .row [class*="col"] {
+    background-color: blue;
+    min-height: 100px;
+    border: solid 1px black;
 }
 
 /* Mediaquery */

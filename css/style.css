@@ -133,19 +133,35 @@ header .ms_container img {
 
 /* Sezione console */
 #console {
-    /* debug */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-    height: 500px;
     width: 100%;
+    padding: 80px 0 40px 0;
 }
 
-#console .row [class*="col"] {
-    background-color: blue;
-    min-height: 100px;
-    border: solid 1px black;
+#console h5 {
+    color: #0072ce;
+}
+
+#console .h2 {
+    font-size: 70px;
+}
+
+#console small {
+    padding: 20px 0;
+    font-size: 35px;
+}
+
+.ms_container-console {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ms_btn_console {
+    background-color: #2d64e6;
+}
+
+.ms_text-console {
+    align-items: center;
 }
 
 /* Mediaquery */

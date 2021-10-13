@@ -35,7 +35,7 @@ header .row:first-child h2 {
     align-items: center;
 }
 
-.ms_container img {
+header .ms_container img {
     height: 35px;
     padding: 10px;
 }
@@ -105,7 +105,29 @@ header .row:first-child h2 {
 }
 
 .jumbotron img {
+    width: 350px;
+    max-width: 100%;
     height: 65px;
+}
+
+/* Sezioni giochi */
+#giochi {
+    width: 100%;
+    padding: 50px 0;
+}
+
+#giochi .ms_container {
+    justify-content: center;
+}
+
+#giochi img {
+    width: 85%;
+    border-radius: 20px;
+}
+
+#img_border {
+    padding: 4px;
+    border: solid 2px #0072ce;
 }
 
 /* Mediaquery */
@@ -113,5 +135,11 @@ header .row:first-child h2 {
 @media all and (min-width: 992px) {
     .jumbotron img {
         height: 60px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #giochi img {
+        width: 100%;
     }
 }

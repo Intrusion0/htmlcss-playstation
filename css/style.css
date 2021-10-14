@@ -156,7 +156,7 @@ header .ms_container img {
     width: 100%;
 }
 
-.ms_container-console {
+.ms_container-console, .ms_container-card-ps4 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -249,6 +249,29 @@ header .ms_container img {
     padding: 15px 15px 30px;
 }
 
+/* Sezione PlayStation 4 */
+#ms_ps4 {
+    padding: 90px 0;
+}
+
+#ms_ps4 small {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#ms_ps4 .h2 {
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+
+.ms_row-ps4 {
+    margin-top: 100px;
+}
+
+.ms_row-ps4 img {
+    width: 100%;
+}
+
 /* Mediaquery */
 
 /* Da Large in su (lg - xxl) */
@@ -263,6 +286,15 @@ header .ms_container img {
     #nuove_uscite span {
         font-size: 13px;
     }
+
+    /* Sezione PlayStation 4 */
+    #ms_ps4 .h2 {
+        font-size: 45px;
+    }
+
+    #ms_ps4 small {
+        font-size: 19px;
+    }
 }
 
 /* Da Extra extra Large in su ( > xxl) */
@@ -273,6 +305,15 @@ header .ms_container img {
     /* Sezione nuove_uscite */
     #nuove_uscite span {
         font-size: 25px;
+    }
+
+    /* Sezione PlayStation 4 */
+    #ms_ps4 .h2 {
+        font-size: 55px;
+    }
+
+    #ms_ps4 small {
+        font-size: 28px;
     }
 }
 
@@ -309,6 +350,15 @@ header .ms_container img {
 
     #nuove_uscite span {
         font-size: 15px;
+    }
+
+    /* Sezione PlayStation 4 */
+    #ms_ps4 .h2 {
+        font-size: 40px;
+    }
+
+    #ms_ps4 small {
+        font-size: 22px;
     }
 }
 

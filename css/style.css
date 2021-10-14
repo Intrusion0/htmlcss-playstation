@@ -312,7 +312,29 @@ header .ms_container img {
 
 /* Sezione PlayStation Store */
 #ps_store {
-    padding: 80px 0;
+    padding: 100px 0;
+}
+
+#ps_store img {
+    height: 100%;
+    width: 90%;
+}
+
+.ms_container.ms_card-store {
+    justify-content: center;
+}
+
+.title_ps_store {
+    margin-bottom: 100px;
+}
+
+#ps_store p {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+#ps_store small {
+    font-size: 30px;
 }
 
 /* --MEDIAQUERY-- */
@@ -343,6 +365,15 @@ header .ms_container img {
     .ms_container-ps_plus p {
         font-size: 17px;
     }
+
+    /* Sezione PlayStation Store */
+    #ps_store p {
+        font-size: 35px;
+    }
+
+    #ps_store small {
+        font-size: 18px;
+    }
 }
 
 /* Da Extra extra Large in su ( > xxl) */
@@ -367,6 +398,15 @@ header .ms_container img {
     /* Sezione PlayStation Plus */
     .ms_container-ps_plus p {
         font-size: 27px;
+    }
+
+    /* Sezione PlayStation Store */
+    #ps_store p {
+        font-size: 50px;
+    }
+
+    #ps_store small {
+        font-size: 30px;
     }
 }
 
@@ -418,6 +458,15 @@ header .ms_container img {
     .ms_container-ps_plus p {
         font-size: 18px;
         padding: 25px 0 20px;
+    }
+
+    /* Sezione PlayStation Store */
+    #ps_store p {
+        font-size: 40px;
+    }
+
+    #ps_store small {
+        font-size: 22px;
     }
 }
 

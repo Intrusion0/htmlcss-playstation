@@ -95,7 +95,8 @@ header .ms_container img {
 
 /* Jumbotron */
 .jumbotron, .jumbotron_2 {
-    position: relative;
+    display: flex;
+    align-items: flex-end;
     min-height: 960px;
     margin-top: 111px;
     background-image: url('../img/jumbo-bg.png');
@@ -105,10 +106,7 @@ header .ms_container img {
 }
 
 .ms_container_jumbo {
-    position: absolute;
-    bottom: 105px;
-    left: 0;
-    padding-left: 45px;
+    padding: 0 0 100px 45px;
 }
 
 .ms_btn-jumbotron {
@@ -225,10 +223,6 @@ header .ms_container img {
 /* Jumbotron-2 (it-takes-two) */
 .jumbotron.jumbotron_2 {
     background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
-}
-
-.ms_container_jumbo.ms_container_jumbo_2 {
-    bottom: 80px;
 }
 
 .jumbotron.jumbotron_2 img {

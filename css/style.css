@@ -273,29 +273,38 @@ header .ms_container img {
     width: 100%;
 }
 
-/* Sezione PlayStation Plus */
+/* Sezione PlayStation Plus e PlayStation Now*/
 #ps_plus {
     background-color: #bebcbb;
     width: 100%;
 }
 
-.games_ps_plus {
-    display: block;
-}
-
-.games_ps_plus > img {
+#ps_now {
+    background-color: #161c3b;
     width: 100%;
 }
 
-.ms_container-ps_plus > img {
+.games_ps_plus, .games_ps_now {
+    display: block;
+}
+
+.games_ps_plus > img, .games_ps_now > img {
+    width: 100%;
+}
+
+.ms_container-ps_plus > img, .ms_container-ps_now > img {
     width: 60%;
     height: 100%;
 }
 
-.ms_container-ps_plus p {
+.ms_container-ps_plus p, .ms_container-ps_now p {
     color: black;
     font-size: 26px;
     padding: 45px 0 30px;
+}
+
+.ms_container-ps_now p {
+    color: white;
 }
 
 .ms_btn_ps_plus {
@@ -305,7 +314,12 @@ header .ms_container img {
     border-color: #d9dadc;
 }
 
-.ms_btn_ps_plus h2 {
+.ms_btn_ps_now {
+    color: black;
+    padding: 10px 15px;
+}
+
+.ms_btn_ps_plus h2, .ms_btn_ps_now h2 {
     margin-bottom: 0;
     font-size: 20px;
 }
@@ -337,6 +351,36 @@ header .ms_container img {
     font-size: 30px;
 }
 
+/* Sezione social media */
+
+#social_media {
+    padding: 100px 0;
+    width: 100%;
+}
+
+.ms_title_social_media {
+    margin-bottom: 50px;
+}
+
+.ms_title_social_media h3 {
+    font-size: 35px;
+}
+
+#social_media img {
+    width: 90%;
+    height: 100%;
+}
+
+.ms_container_social_media {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
 /* --MEDIAQUERY-- */
 
 /* Da Large in su (lg - xxl) */
@@ -361,9 +405,13 @@ header .ms_container img {
         font-size: 19px;
     }
 
-    /* Sezione PlayStation Plus */
+    /* Sezione PlayStation Plus e PlayStation Now*/
     .ms_container-ps_plus p {
         font-size: 17px;
+    }
+
+    .ms_container-ps_now p {
+        font-size: 14px;
     }
 
     /* Sezione PlayStation Store */
@@ -373,6 +421,11 @@ header .ms_container img {
 
     #ps_store small {
         font-size: 18px;
+    }
+
+    /* Sezione social media */
+    .ms_title_social_media h3 {
+        font-size: 55px;
     }
 }
 
@@ -395,9 +448,13 @@ header .ms_container img {
         font-size: 28px;
     }
 
-    /* Sezione PlayStation Plus */
+    /* Sezione PlayStation Plus e PlayStation Now */
     .ms_container-ps_plus p {
         font-size: 27px;
+    }
+
+    .ms_container-ps_now p {
+        font-size: 26px;
     }
 
     /* Sezione PlayStation Store */
@@ -407,6 +464,11 @@ header .ms_container img {
 
     #ps_store small {
         font-size: 30px;
+    }
+
+    /* Sezione social media */
+    .ms_title_social_media h3 {
+        font-size: 65px;
     }
 }
 
@@ -454,9 +516,14 @@ header .ms_container img {
         font-size: 22px;
     }
 
-    /* Sezione PlayStation Plus */
+    /* Sezione PlayStation Plus e PlayStation Now*/
     .ms_container-ps_plus p {
         font-size: 18px;
+        padding: 25px 0 20px;
+    }
+
+    .ms_container-ps_now p {
+        font-size: 17px;
         padding: 25px 0 20px;
     }
 
@@ -500,12 +567,12 @@ header .ms_container img {
         font-size: 33px;
     }
 
-    /* Sezione PlayStation Plus */
-    .games_ps_plus {
+    /* Sezione PlayStation Plus e PlayStation Now */
+    .games_ps_plus, .games_ps_now {
         display: none;
     }
 
-    .ms_container-ps_plus {
+    .ms_container-ps_plus, .ms_container-ps_now {
         padding: 50px 0;
     }
 }

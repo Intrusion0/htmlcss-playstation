@@ -376,8 +376,55 @@ header .ms_container img {
     justify-content: center;
 }
 
+/* Footer */
+footer {
+    padding: 100px 0;
+    width: 100%;
+    background-color: #00439c;
+}
 
+.ms_container-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.ms_list-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.ms_list-footer li {
+    margin-bottom: 7px;
+}
+
+footer .container-fluid .row:first-child img {
+    height: 100%;
+    width: 15%;
+}
+
+footer .container-fluid .row:first-child i {
+    color: white;
+    margin-top: 35px;
+}
+
+footer .container-fluid .row:last-child img {
+    height: 100%;
+    width: 25%;
+}
+
+footer .container-fluid .row:last-child p {
+    margin-top: 10px;
+    color: white;
+}
+
+footer .container-fluid .row:last-child a {
+    color: white;
+}
+
+.bi-globe::before {
+    padding-right: 10px;
+}
 
 
 
@@ -427,6 +474,7 @@ header .ms_container img {
     .ms_title_social_media h3 {
         font-size: 55px;
     }
+
 }
 
 /* Da Extra extra Large in su ( > xxl) */
@@ -534,6 +582,11 @@ header .ms_container img {
 
     #ps_store small {
         font-size: 22px;
+    }
+
+    /* Footer */
+    footer .container-fluid .row:nth-child(2) .ms_container-footer {
+        margin-top: 35px;
     }
 }
 

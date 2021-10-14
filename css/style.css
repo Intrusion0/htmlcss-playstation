@@ -45,13 +45,21 @@ header .ms_container img {
     background-color: white !important;
 }
 
-#ms_lens {
+.ms_lens {
     height: 25px;
     width: 25px;
 }
 
+.ms_lens_first {
+    display: block;
+}
+
 .ms_search {
     display: none;
+}
+
+.ms_search_bar {
+    background-color: white;
 }
 
 .ms_nav-link {
@@ -67,6 +75,23 @@ header .ms_container img {
 .ms_btn-header {
     margin: 0 20px 0 0;
 }
+
+.ms_list_dropdown-menu {
+    position: fixed !important;
+    left: 0 !important;
+    top: 108px !important;
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+}
+
+.ms_circle_list_blue {
+    border: 2px solid blue;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 /* Jumbotron */
 .jumbotron, .jumbotron_2 {
@@ -525,8 +550,25 @@ footer .container-fluid .row:last-child a {
 
 @media all and (max-width: 991px) {
     /* Header */
+    .ms_lens_first {
+        display: none;
+    }
+
     .ms_search {
-        display: block;
+        display: flex;
+    }
+
+    .ms_btn-header {
+        padding: 6px 140px;
+        margin: 10px 0 15px;
+    }
+
+    .ms_nav-link {
+        padding: 0.5rem 0rem;
+    }
+
+    .ms_list_dropdown-menu {
+        position: static !important;
     }
 
     /* Console */
@@ -597,6 +639,10 @@ footer .container-fluid .row:last-child a {
     /* Sezione giochi */
     #giochi img {
         width: 100%;
+    }
+
+    #giochi #img_border {
+        width: 98.45%;
     }
 
     /* Sezione console */

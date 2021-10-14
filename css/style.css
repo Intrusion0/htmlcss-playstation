@@ -124,12 +124,13 @@ header .ms_container img {
 }
 
 #giochi img {
-    width: 85%;
+    width: 90%;
     border-radius: 20px;
+    padding: 3px;
 }
 
-#img_border {
-    padding: 4px;
+#giochi #img_border {
+    width: 88.65%;
     border: solid 2px #0072ce;
 }
 

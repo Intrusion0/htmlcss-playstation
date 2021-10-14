@@ -156,7 +156,7 @@ header .ms_container img {
     width: 100%;
 }
 
-.ms_container-console, .ms_container-card-ps4 {
+.ms_container-console, .ms_container-card-ps4, .ms_container-ps_plus {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -164,6 +164,7 @@ header .ms_container img {
 
 .ms_btn_console {
     background-color: #2d64e6;
+    padding: 10px 15px;
 }
 
 .ms_text-console {
@@ -272,7 +273,49 @@ header .ms_container img {
     width: 100%;
 }
 
-/* Mediaquery */
+/* Sezione PlayStation Plus */
+#ps_plus {
+    background-color: #bebcbb;
+    width: 100%;
+}
+
+.games_ps_plus {
+    display: block;
+}
+
+.games_ps_plus > img {
+    width: 100%;
+}
+
+.ms_container-ps_plus > img {
+    width: 60%;
+    height: 100%;
+}
+
+.ms_container-ps_plus p {
+    color: black;
+    font-size: 26px;
+    padding: 45px 0 30px;
+}
+
+.ms_btn_ps_plus {
+    padding: 10px 15px;
+    color: #2d64e6;
+    background-color: #d9dadc;
+    border-color: #d9dadc;
+}
+
+.ms_btn_ps_plus h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* Sezione PlayStation Store */
+#ps_store {
+    padding: 80px 0;
+}
+
+/* --MEDIAQUERY-- */
 
 /* Da Large in su (lg - xxl) */
 
@@ -295,6 +338,11 @@ header .ms_container img {
     #ms_ps4 small {
         font-size: 19px;
     }
+
+    /* Sezione PlayStation Plus */
+    .ms_container-ps_plus p {
+        font-size: 17px;
+    }
 }
 
 /* Da Extra extra Large in su ( > xxl) */
@@ -315,11 +363,16 @@ header .ms_container img {
     #ms_ps4 small {
         font-size: 28px;
     }
+
+    /* Sezione PlayStation Plus */
+    .ms_container-ps_plus p {
+        font-size: 27px;
+    }
 }
 
 /* Tablet (md) */
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
     /* Header */
     .ms_search {
         display: block;
@@ -360,11 +413,17 @@ header .ms_container img {
     #ms_ps4 small {
         font-size: 22px;
     }
+
+    /* Sezione PlayStation Plus */
+    .ms_container-ps_plus p {
+        font-size: 18px;
+        padding: 25px 0 20px;
+    }
 }
 
 /* Smartphone (sm) */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     /* Sezione giochi */
     #giochi img {
         width: 100%;
@@ -391,11 +450,20 @@ header .ms_container img {
     #nuove_uscite p {
         font-size: 33px;
     }
+
+    /* Sezione PlayStation Plus */
+    .games_ps_plus {
+        display: none;
+    }
+
+    .ms_container-ps_plus {
+        padding: 50px 0;
+    }
 }
 
 /* Smartphone (xs) */
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 575px) {
     /* Console */
     #console .h2 {
         font-size: 40px;

@@ -255,7 +255,7 @@ header .ms_container img {
     padding-bottom: 26px;
 }
 
-/* BONUS Hover */
+/* BONUS */
 .ms_btn-console {
     padding: 2px;
 }
@@ -264,6 +264,27 @@ header .ms_container img {
     box-shadow: 0 0 0 2px #2d64e6;
     padding: 2px;
     border-radius: 50px;
+}
+
+.mini_card span {
+    font-size: 17px;
+}
+
+.mini_card p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.card_img_not {
+    width: 55%;
+}
+
+.card_img {
+    opacity: 0.6;
+}
+
+#console a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Jumbotron-2 (it-takes-two) */

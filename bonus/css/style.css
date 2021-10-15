@@ -99,14 +99,14 @@ header .ms_container img {
     align-items: flex-end;
     min-height: 960px;
     margin-top: 111px;
-    background-image: url('../img/jumbo-bg.png');
+    background-image: url('../img/farcry_lg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .ms_container_jumbo {
-    padding: 0 0 100px 45px;
+    margin: 0 0 100px 45px;
 }
 
 .ms_btn-jumbotron {
@@ -150,6 +150,8 @@ header .ms_container img {
     width: 90%;
     border-radius: 20px;
     padding: 3px;
+    height: 150px;
+    object-fit: cover;
 }
 
 #giochi #img_border {

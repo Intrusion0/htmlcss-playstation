@@ -1,0 +1,712 @@
+/* General rules */
+@import url('http://fonts.cdnfonts.com/css/arial');
+@import url('http://fonts.cdnfonts.com/css/helvetica-255');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+}
+
+header .row:first-child {
+    background-color: black;
+}
+
+header .row:first-child h2 {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    margin-bottom: 0;
+    padding: 5px 10px;
+}
+
+.ms_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .ms_container img {
+    height: 35px;
+    padding: 10px;
+}
+
+.ms_navbar {
+    font-family: 'Helvetica', sans-serif;
+    background-color: white !important;
+}
+
+.ms_lens {
+    height: 25px;
+    width: 25px;
+}
+
+.ms_lens_first {
+    display: block;
+}
+
+.ms_search {
+    display: none;
+}
+
+.ms_search_bar {
+    background-color: white;
+}
+
+.ms_nav-link {
+    color: black !important;
+    font-weight: 600;
+}
+
+.dropdown-toggle::after {
+    color: #999999;
+    vertical-align: 0.13em;
+}
+
+.ms_btn-header {
+    margin: 0 20px 0 0;
+}
+
+.ms_list_dropdown-menu {
+    position: fixed !important;
+    left: 0 !important;
+    top: 108px !important;
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+}
+
+.ms_circle_list_blue {
+    border: 2px solid blue;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* Jumbotron */
+.jumbotron, .jumbotron_2 {
+    display: flex;
+    align-items: flex-end;
+    min-height: 960px;
+    margin-top: 111px;
+    background-image: url('../img/jumbo-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ms_container_jumbo {
+    padding: 0 0 100px 45px;
+}
+
+.ms_btn-jumbotron {
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #cd3d0f;
+    border-color: #cd3d0f;
+}
+
+.jumbotron h2 {
+    font-size: 65px;
+    color: white;
+    padding: 45px 0 10px 0;
+}
+
+.jumbotron p {
+    padding: 35px 0 20px;
+    font-size: 26px;
+    color: white;
+}
+
+.jumbotron img {
+    width: 350px;
+    max-width: 100%;
+    height: 65px;
+}
+
+/* Sezioni giochi */
+#giochi {
+    width: 100%;
+    padding: 50px 0;
+}
+
+#giochi .ms_container, #nuove_uscite .ms_container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+#giochi img {
+    width: 90%;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+#giochi #img_border {
+    width: 88.65%;
+    border: solid 2px #0072ce;
+}
+
+/* Sezione console */
+#console {
+    width: 100%;
+    padding: 80px 0 40px 0;
+}
+
+#console h5 {
+    color: #0072ce;
+}
+
+#console .h2 {
+    font-size: 62px;
+}
+
+#console small {
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#ps_5 {
+    width: 100%;
+}
+
+.ms_container-console, .ms_container-card-ps4, .ms_container-ps_plus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ms_btn_console {
+    background-color: #2d64e6;
+    padding: 10px 15px;
+}
+
+.ms_text-console {
+    align-items: center;
+    margin: 100px 0;
+}
+
+#console .ms_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.card_img {
+    width: 55%;
+}
+
+.mini_card {
+    display: block;
+    margin-top: 15px;
+}
+
+.mini_card p {
+    font-size: 17px;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #0072ce!important;
+    padding-bottom: 26px;
+}
+
+/* Jumbotron-2 (it-takes-two) */
+.jumbotron.jumbotron_2 {
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+}
+
+.jumbotron.jumbotron_2 img {
+    height: 100%;
+}
+
+.jumbotron.jumbotron_2 h2 {
+    font-size: 50px;
+}
+
+.jumbotron.jumbotron_2 p {
+    font-size: 21px;
+}
+
+/* Sezione nuove uscite */
+#nuove_uscite {
+    background-color: #1f1f1f;
+    width: 100%;
+    padding: 50px 0;
+}
+
+#nuove_uscite img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+#nuove_uscite h2 {
+    color: white;
+    font-size: 40px;
+}
+
+#nuove_uscite p {
+    color: white;
+    font-size: 27px;
+}
+
+#nuove_uscite .container_nuove_uscite {
+    align-items: flex-start;
+    padding-left: 21px;
+}
+
+#nuove_uscite span {
+    color: white;
+    font-size: 25px;
+    padding: 15px 15px 30px;
+}
+
+/* Sezione PlayStation 4 */
+#ms_ps4 {
+    padding: 90px 0;
+}
+
+#ms_ps4 small {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#ms_ps4 .h2 {
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+
+.ms_row-ps4 {
+    margin-top: 100px;
+}
+
+.ms_row-ps4 img {
+    width: 100%;
+}
+
+/* Sezione PlayStation Plus e PlayStation Now*/
+#ps_plus {
+    background-color: #bebcbb;
+    width: 100%;
+}
+
+#ps_now {
+    background-color: #161c3b;
+    width: 100%;
+}
+
+.games_ps_plus, .games_ps_now {
+    display: block;
+}
+
+.games_ps_plus > img, .games_ps_now > img {
+    width: 100%;
+}
+
+.ms_container-ps_plus > img, .ms_container-ps_now > img {
+    width: 60%;
+    height: 100%;
+}
+
+.ms_container-ps_plus p, .ms_container-ps_now p {
+    color: black;
+    font-size: 26px;
+    padding: 45px 0 30px;
+}
+
+.ms_container-ps_now p {
+    color: white;
+}
+
+.ms_btn_ps_plus {
+    padding: 10px 15px;
+    color: #2d64e6;
+    background-color: #d9dadc;
+    border-color: #d9dadc;
+}
+
+.ms_btn_ps_now {
+    color: black;
+    padding: 10px 15px;
+}
+
+.ms_btn_ps_plus h2, .ms_btn_ps_now h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* Sezione PlayStation Store */
+#ps_store {
+    padding: 100px 0;
+}
+
+#ps_store img {
+    height: 100%;
+    width: 90%;
+}
+
+.ms_container.ms_card-store {
+    justify-content: center;
+}
+
+.title_ps_store {
+    margin-bottom: 100px;
+}
+
+#ps_store p {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+#ps_store small {
+    font-size: 30px;
+}
+
+/* Sezione social media */
+
+#social_media {
+    padding: 100px 0;
+    width: 100%;
+}
+
+.ms_title_social_media {
+    margin-bottom: 50px;
+}
+
+.ms_title_social_media h3 {
+    font-size: 35px;
+}
+
+#social_media img {
+    width: 90%;
+    height: 100%;
+}
+
+.ms_container_social_media {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    padding: 100px 0;
+    width: 100%;
+    background-color: #00439c;
+}
+
+.ms_container-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ms_list-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.ms_list-footer li {
+    margin-bottom: 7px;
+}
+
+footer .container-fluid .row:first-child img {
+    height: 100%;
+    width: 15%;
+}
+
+footer .container-fluid .row:first-child i {
+    color: white;
+    margin-top: 35px;
+}
+
+footer .container-fluid .row:last-child img {
+    height: 100%;
+    width: 25%;
+}
+
+footer .container-fluid .row:last-child p {
+    margin-top: 10px;
+    color: white;
+}
+
+footer .container-fluid .row:last-child a {
+    color: white;
+}
+
+.bi-globe::before {
+    padding-right: 10px;
+}
+
+
+
+/* --MEDIAQUERY-- */
+
+/* Da Large in su (lg - xxl) */
+
+@media all and (min-width: 992px) {
+    /* Jumbotron */
+    .jumbotron img {
+        height: 60px;
+    }
+
+    /* Sezione nuove_uscite */
+    #nuove_uscite span {
+        font-size: 13px;
+    }
+
+    /* Sezione PlayStation 4 */
+    #ms_ps4 .h2 {
+        font-size: 45px;
+    }
+
+    #ms_ps4 small {
+        font-size: 19px;
+    }
+
+    /* Sezione PlayStation Plus e PlayStation Now*/
+    .ms_container-ps_plus p {
+        font-size: 17px;
+    }
+
+    .ms_container-ps_now p {
+        font-size: 14px;
+    }
+
+    /* Sezione PlayStation Store */
+    #ps_store p {
+        font-size: 35px;
+    }
+
+    #ps_store small {
+        font-size: 18px;
+    }
+
+    /* Sezione social media */
+    .ms_title_social_media h3 {
+        font-size: 55px;
+    }
+
+}
+
+/* Da Extra extra Large in su ( > xxl) */
+
+@media all and (min-width: 1400px) {
+    /* Jumbotron */
+    
+    /* Sezione nuove_uscite */
+    #nuove_uscite span {
+        font-size: 25px;
+    }
+
+    /* Sezione PlayStation 4 */
+    #ms_ps4 .h2 {
+        font-size: 55px;
+    }
+
+    #ms_ps4 small {
+        font-size: 28px;
+    }
+
+    /* Sezione PlayStation Plus e PlayStation Now */
+    .ms_container-ps_plus p {
+        font-size: 27px;
+    }
+
+    .ms_container-ps_now p {
+        font-size: 26px;
+    }
+
+    /* Sezione PlayStation Store */
+    #ps_store p {
+        font-size: 50px;
+    }
+
+    #ps_store small {
+        font-size: 30px;
+    }
+
+    /* Sezione social media */
+    .ms_title_social_media h3 {
+        font-size: 65px;
+    }
+}
+
+/* Tablet (md) */
+
+@media all and (max-width: 991px) {
+    /* Header */
+    .ms_lens_first {
+        display: none;
+    }
+
+    .ms_search {
+        display: flex;
+    }
+
+    .ms_btn-header {
+        padding: 6px 140px;
+        margin: 10px 0 15px;
+    }
+
+    .ms_nav-link {
+        padding: 0.5rem 0rem;
+    }
+
+    .ms_list_dropdown-menu {
+        position: static !important;
+    }
+
+    /* Console */
+    .border-bottom {
+        padding-bottom: 54px;
+    }
+
+    .mini_card p {
+        font-size: 20px;
+    }
+
+    /* Jumbotron-2 */
+    .jumbotron.jumbotron_2 img {
+        width: 60%;
+    }
+
+    /* Sezione nuove uscite */
+    #nuove_uscite h2 {
+        font-size: 45px;
+    }
+
+    #nuove_uscite p {
+        font-size: 30px;
+    }
+
+    #nuove_uscite span {
+        font-size: 15px;
+    }
+
+    /* Sezione PlayStation 4 */
+    #ms_ps4 .h2 {
+        font-size: 40px;
+    }
+
+    #ms_ps4 small {
+        font-size: 22px;
+    }
+
+    /* Sezione PlayStation Plus e PlayStation Now*/
+    .ms_container-ps_plus p {
+        font-size: 18px;
+        padding: 25px 0 20px;
+    }
+
+    .ms_container-ps_now p {
+        font-size: 17px;
+        padding: 25px 0 20px;
+    }
+
+    /* Sezione PlayStation Store */
+    #ps_store p {
+        font-size: 40px;
+    }
+
+    #ps_store small {
+        font-size: 22px;
+    }
+
+    /* Footer */
+    footer .container-fluid .row:nth-child(2) .ms_container-footer {
+        margin-top: 35px;
+    }
+}
+
+/* Smartphone (sm) */
+
+@media all and (max-width: 767px) {
+    /* Sezione giochi */
+    #giochi img {
+        width: 100%;
+    }
+
+    #giochi #img_border {
+        width: 98.45%;
+    }
+
+    /* Sezione console */
+    #console small {
+        font-size: 28px;
+    }
+
+    #console .h2 {
+        font-size: 45px;
+    }
+
+    .mini_card {
+        display: none;
+    }
+
+    /* Sezione nuove uscite */
+    #nuove_uscite h2 {
+        font-size: 45px;
+    }
+
+    #nuove_uscite p {
+        font-size: 33px;
+    }
+
+    /* Sezione PlayStation Plus e PlayStation Now */
+    .games_ps_plus, .games_ps_now {
+        display: none;
+    }
+
+    .ms_container-ps_plus, .ms_container-ps_now {
+        padding: 50px 0;
+    }
+}
+
+/* Smartphone (xs) */
+
+@media all and (max-width: 575px) {
+    /* Console */
+    #console .h2 {
+        font-size: 40px;
+    }
+
+    #console small {
+        font-size: 20px;
+    }
+
+    /* Jumbotron-2 */
+    .jumbotron.jumbotron_2 img {
+        width: 75%;
+    }
+
+    .jumbotron.jumbotron_2 h2 {
+        font-size: 43px;
+    }
+
+    .jumbotron.jumbotron_2 p {
+        font-size: 19px;
+    }
+
+    /* Sezione nuove uscite */
+    #nuove_uscite h2 {
+        font-size: 40px;
+    }
+
+    #nuove_uscite p {
+        font-size: 27px;
+    }
+
+    /* Sezione nuove_uscite */
+    #nuove_uscite span {
+        font-size: 16px;
+    }
+}

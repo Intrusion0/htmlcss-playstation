@@ -100,6 +100,13 @@ header .ms_container img {
     border-radius: 50px;
 }
 
+.ms_nav-link:hover {
+    color: #2d64e6 !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 1.5rem 2rem rgba(0,0,0,.175)!important;
+}
 
 /* Jumbotron */
 .jumbotron, .jumbotron_2 {
@@ -285,6 +292,15 @@ header .ms_container img {
 #console a {
     text-decoration: none;
     color: black;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+.w-100 {
+    width: 70%!important;
+    margin: 0 auto;
 }
 
 /* Jumbotron-2 (it-takes-two) */
